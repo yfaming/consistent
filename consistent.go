@@ -18,7 +18,7 @@
 //
 // Read more about consistent hashing on wikipedia:  http://en.wikipedia.org/wiki/Consistent_hashing
 //
-package consistent // import "stathat.com/c/consistent"
+package consistent
 
 import (
 	"errors"
@@ -26,6 +26,9 @@ import (
 	"sort"
 	"strconv"
 	"sync"
+
+	//"github.com/shawnfeng/sutil/stime"
+	//"github.com/shawnfeng/sutil/slog"
 )
 
 type uints []uint32
@@ -64,6 +67,25 @@ func New() *Consistent {
 	return c
 }
 
+
+func NewWithElts(elts []string) *Consistent {
+	c := New()
+
+	c.Lock()
+	defer c.Unlock()
+	for _, elt := range elts {
+		for i := 0; i < c.NumberOfReplicas; i++ {
+			c.circle[c.hashKey(c.eltKey(elt, i))] = elt
+		}
+		c.members[elt] = true
+	}
+	c.updateSortedHashes()
+	c.count = int64(len(elts))
+
+	return c
+}
+
+
 // eltKey generates a string key for an element with an index.
 func (c *Consistent) eltKey(elt string, idx int) string {
 	// return elt + "|" + strconv.Itoa(idx)
@@ -85,6 +107,7 @@ func (c *Consistent) add(elt string) {
 	c.members[elt] = true
 	c.updateSortedHashes()
 	c.count++
+	//slog.Infof("add --> count:%d circle:%d mem:%d", c.count, len(c.circle), len(c.members))
 }
 
 // Remove removes an element from the hash.
