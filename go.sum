@@ -3,6 +3,8 @@ github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/fzzy/radix v0.4.9-0.20141113025130-a3a55de9c594/go.mod h1:KhtJfdbo4PD2LEOYO7QCVSIH0pOcZEZ/SpNsXgwQtkk=
+github.com/golang/protobuf v0.0.0-20140729232320-25535e35a86c/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=
+github.com/google/uuid v1.1.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
 github.com/julienschmidt/httprouter v1.0.1-0.20150106073633-b55664b9e920/go.mod h1:SYymIcj16QtmaHHD7aYtjjsJG7VTCxuUUipMqKk8s4w=
 github.com/kaneshin/go-pkg v0.0.0-20150919125626-a8e1479186cf/go.mod h1:XI2QuPvM6xUXWcpwlqaMB+SxxV7XNr3aO/DrUK8lRZo=
 github.com/kr/pretty v0.1.0 h1:L/CwN0zerZDmRFUapSPitk6f+Q3+0za1rQkzVuMiMFI=
@@ -17,10 +19,8 @@ github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZN
 github.com/sdming/gosnow v0.0.0-20130403030620-3a05c415e886/go.mod h1:xucuMeiX1TAS2KBgvWFPd0UZN3BnOmHZEggfq28hlfA=
 github.com/serialx/hashring v0.0.0-20160507062712-75d57fa264ad h1:mpxwmAjNlKI9APNovS0hArS2M++kihzyekvHmRSTQM8=
 github.com/serialx/hashring v0.0.0-20160507062712-75d57fa264ad/go.mod h1:/yeG0My1xr/u+HZrFQ1tOQQQQrOawfyMUH13ai5brBc=
-github.com/shawnfeng/googleuuid v1.0.0/go.mod h1:9RLn0l5rB835NpPo5VQDZV7WGz0Jcm/Qc95aIg3s1ns=
-github.com/shawnfeng/googlpb v1.0.0/go.mod h1:VpYgH1aM4iKO/HCaWKKSCzf4hpKfIEfKZGW/KCppRT0=
-github.com/shawnfeng/sutil v1.0.0 h1:v1sf6sYOj5ym38MIrt4oue9cCqnfFdWhDL9H49xlnWE=
-github.com/shawnfeng/sutil v1.0.0/go.mod h1:ycTUS57YtKRrAP1PniLJUdjBgq7DizOjs6jt/LIVvLo=
+github.com/shawnfeng/sutil v1.0.1 h1:6/Yvu5hErHmOUKmTgwlVaZlMDBq+I5CA8nDL5g/AHB4=
+github.com/shawnfeng/sutil v1.0.1/go.mod h1:LbjZRtKxaceRvFCjyklfg8ZJoh0K64Zam2pKMwbuNBo=
 github.com/stretchr/testify v1.2.3-0.20181014000028-04af85275a5c h1:03OmljzZYsezlgAfa+f/cY8E8XXPiFh5bgANMhUlDI4=
 github.com/stretchr/testify v1.2.3-0.20181014000028-04af85275a5c/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=
 github.com/stretchrcom/testify v1.2.2/go.mod h1:zUrQijuLcfRPyrWG6SBFjct9CuJZz2Ybtack4DGF2Jo=
