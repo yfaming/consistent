@@ -2,16 +2,15 @@
 // Use of this source code is governed by an MIT-style license
 // that can be found in the LICENSE file.
 
-package consistent_test
+package consistent
 
 import (
-	"../consistent"
 	"fmt"
 	"log"
 )
 
 func ExampleNew() {
-	c := consistent.New()
+	c := New()
 	c.Add("cacheA")
 	c.Add("cacheB")
 	c.Add("cacheC")
@@ -32,7 +31,7 @@ func ExampleNew() {
 }
 
 func ExampleAdd() {
-	c := consistent.New()
+	c := New()
 	c.Add("cacheA")
 	c.Add("cacheB")
 	c.Add("cacheC")
@@ -72,7 +71,7 @@ func ExampleAdd() {
 }
 
 func ExampleRemove() {
-	c := consistent.New()
+	c := New()
 	c.Add("cacheA")
 	c.Add("cacheB")
 	c.Add("cacheC")
